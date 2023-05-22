@@ -9,11 +9,14 @@
         'https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_bNtaSGs4rjuMW2y'
       ];
 
-      // Get a random URL from the array
-      var randomURL = urls[Math.floor(Math.random() * urls.length)];
+      // Get a random number between 0 and 1
+      var randomNumber = Math.random();
+
+      // Determine the URL based on the random number
+      var redirectURL = randomNumber < 0.5 ? urls[0] : urls[1];
 
       // Redirect to the randomly chosen URL
-      window.location.href = randomURL;
+      window.location.href = redirectURL;
     </script>
   </head>
   <body>
