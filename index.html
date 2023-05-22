@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      // Array of URLs to redirect to (control and treatment questionnaires)
+      var urls = [
+        'https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_bgugGvuaekgWY0C',
+        'https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_bNtaSGs4rjuMW2y'
+      ];
+
+      // Get a random URL from the array
+      var randomURL = urls[Math.floor(Math.random() * urls.length)];
+
+      // Redirect to the randomly chosen URL
+      window.location.href = randomURL;
+    </script>
+  </head>
+  <body>
+    <p>Please wait while you're being redirected...</p>
+  </body>
+</html>
